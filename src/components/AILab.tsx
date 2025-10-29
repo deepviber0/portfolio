@@ -7,28 +7,14 @@ const AILab = () => {
       title: "AI Agent Development",
       description: "Building intelligent agents using Lyzr Studio for automated workflows and smart decision-making systems.",
       tech: ["Lyzr Studio", "Python", "AI Agents"],
-      status: "Active"
+      status: "Exploring"
     },
     {
       icon: <Workflow className="w-6 h-6" />,
       title: "n8n Automation",
       description: "Creating sophisticated automation workflows connecting multiple services and APIs for seamless integrations.",
       tech: ["n8n", "Workflows", "API Integration"],
-      status: "Exploring"
-    },
-    {
-      icon: <Code2 className="w-6 h-6" />,
-      title: "OpenAI Integration",
-      description: "Leveraging GPT models for natural language processing, content generation, and intelligent chatbot development.",
-      tech: ["OpenAI API", "GPT-4", "NLP"],
       status: "Active"
-    },
-    {
-      icon: <Network className="w-6 h-6" />,
-      title: "LangChain Projects",
-      description: "Building LLM-powered applications with advanced prompt engineering and chain-based reasoning systems.",
-      tech: ["LangChain", "Python", "RAG"],
-      status: "Learning"
     }
   ];
 
@@ -114,27 +100,19 @@ const AILab = () => {
         <div className="backdrop-blur-md bg-card/40 rounded-2xl p-6 border border-primary/20 shadow-[0_8px_32px_rgba(0,229,255,0.15)] animate-fade-in-up">
           <div className="flex items-center gap-2 mb-4">
             <Zap className="w-5 h-5 text-primary" />
-            <h3 className="text-lg font-semibold text-foreground">AI System Status</h3>
+            <h3 className="text-lg font-semibold text-foreground">AIML Based</h3>
           </div>
           <div className="bg-background/50 rounded-xl p-4 font-mono text-sm space-y-2 border border-border">
             <div className="flex items-center gap-2">
               <span className="text-primary">▸</span>
-              <span className="text-muted-foreground">Initializing AI neural network...</span>
+              <span className="text-muted-foreground">Done Basic - Middle level projects</span>
               <span className="text-primary animate-blink">_</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="text-secondary">✓</span>
-              <span className="text-muted-foreground">Loading machine learning models... Complete</span>
+              <span className="text-muted-foreground">Implemented Them On Websites</span>
             </div>
-            <div className="flex items-center gap-2">
-              <span className="text-primary">▸</span>
-              <span className="text-muted-foreground">Running simulations: </span>
-              <span className="text-primary font-semibold">1,247 iterations/sec</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <span className="text-secondary">✓</span>
-              <span className="text-muted-foreground">System ready for intelligent tasks</span>
-            </div>
+            
           </div>
         </div>
       </div>

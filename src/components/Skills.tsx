@@ -5,35 +5,35 @@ const Skills = () => {
     {
       icon: <Code2 className="w-8 h-8" />,
       title: "Frontend",
-      skills: ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS"],
+      skills: ["HTML", "CSS", "JavaScript", "React Basics"],
       color: "from-primary to-primary-glow",
       borderColor: "border-primary/30 hover:border-primary/60"
     },
     {
       icon: <Database className="w-8 h-8" />,
       title: "Backend & Database",
-      skills: ["Node.js", "Express.js", "MongoDB", "Firebase"],
+      skills: ["Node.js", "Express.js", "MongoDB", "SQL"],
       color: "from-secondary to-purple-500",
       borderColor: "border-secondary/30 hover:border-secondary/60"
     },
     {
       icon: <Cpu className="w-8 h-8" />,
       title: "Programming",
-      skills: ["Python", "Java", "C", "Git"],
+      skills: ["Python", "Java", "C"],
       color: "from-primary to-secondary",
       borderColor: "border-primary/30 hover:border-secondary/60"
     },
     {
       icon: <Brain className="w-8 h-8" />,
-      title: "AI & Data",
-      skills: ["NumPy", "Pandas", "OpenAI API", "LangChain", "n8n"],
+      title: "AI/ML & AI Agents",
+      skills: ["NumPy", "Pandas", "Matplotlib", "Lyzr", "n8n"],
       color: "from-secondary to-pink-500",
       borderColor: "border-secondary/30 hover:border-pink-500/60"
     },
     {
       icon: <Palette className="w-8 h-8" />,
-      title: "Design & Tools",
-      skills: ["Figma", "Tkinter", "VS Code", "Lyzr Studio"],
+      title: "Design & Tools & Version Control",
+      skills: ["Figma", "Tkinter", "VS Code", "GitHub", "Git", "Postman", "PowerBI"],
       color: "from-primary to-cyan-500",
       borderColor: "border-primary/30 hover:border-cyan-500/60"
     },

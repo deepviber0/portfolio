@@ -54,22 +54,35 @@ const Hero = () => {
             </div>
 
             <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl">
-              Passionate developer merging creativity with technology. I specialize in building clean, functional web apps 
-              and exploring how AI can elevate human productivity. Constantly learning, constantly evolving.
+              A creative mind and a curious learner — I craft clean, functional, and intelligent web experiences that blend design with logic.
+              Exploring the evolving edge of <span className="font-semibold text-primary">AI</span> and automation, I believe in building tools that amplify human potential.
+              <br />
+              <span className="block mt-4 italic text-primary">"A Learner May Be An Achiever."</span>
             </p>
 
+
             <div className="flex flex-wrap gap-4 pt-4">
-              <Button 
-                variant="default" 
-                size="lg" 
+              <Button
+                onClick={() => {
+                  const link = document.createElement("a");
+                  link.href = "/Umar_CV.pdf";
+                  link.download = "Shaik_Umar_Althaf_CV.pdf";
+                  link.click();
+                }}
+                variant="default"
+                size="lg"
                 className="gap-2 text-base font-semibold shadow-[0_0_30px_rgba(0,229,255,0.5)] hover:shadow-[0_0_50px_rgba(0,229,255,0.7)] transition-all duration-300"
               >
                 <Download className="w-5 h-5" />
                 Download CV
               </Button>
-              <Button 
-                variant="outline" 
-                size="lg" 
+              <Button
+                variant="outline"
+                size="lg"
+                onClick={() => {
+                  const projectsSection = document.getElementById("projects");
+                  projectsSection?.scrollIntoView({ behavior: "smooth" });
+                }}
                 className="gap-2 text-base font-semibold border-primary/50 text-primary hover:bg-primary/10"
               >
                 View Projects
@@ -82,10 +95,10 @@ const Hero = () => {
             <div className="relative group">
               {/* Outer Glow Ring */}
               <div className="absolute -inset-4 bg-gradient-to-r from-primary to-secondary rounded-full blur-2xl opacity-40 group-hover:opacity-60 animate-pulse-glow transition-all duration-500" />
-              
+
               {/* Rotating Border */}
               <div className="absolute -inset-2 bg-gradient-to-r from-primary via-secondary to-primary rounded-full animate-rotate opacity-50" style={{ background: "conic-gradient(from 0deg, hsl(186, 100%, 50%), hsl(263, 70%, 65%), hsl(186, 100%, 50%))" }} />
-              
+
               {/* Glass Card Effect */}
               <div className="relative backdrop-blur-sm bg-card/30 rounded-full p-2 border border-primary/30">
                 <img

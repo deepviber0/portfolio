@@ -19,7 +19,7 @@ const Index = () => {
       <footer className="bg-card border-t border-border py-6">
         <div className="container mx-auto text-center">
           <p className="text-muted-foreground">
-            © 2025 Shaik Umar Althaf. All rights reserved.
+           Designed in VS Code • Deployed to the world 🚀
           </p>
         </div>
       </footer>

@@ -13,20 +13,27 @@ const About = () => {
           <div className="bg-background rounded-2xl p-8 lg:p-12 shadow-lg border border-border">
             <p className="text-lg text-foreground leading-relaxed space-y-4">
               <span className="block">
-                Hello! I'm <span className="font-semibold text-primary">Umar</span>, an aspiring web developer passionate about building clean, 
-                functional, and user-friendly websites. I thrive on the blend of creativity and logic that web development offers, 
-                allowing me to bring ideas to life through code.
+                Hey there 👋, I'm <span className="font-semibold text-primary">Umar</span> — a creative and curious web developer
+                who loves crafting interactive, smart, and visually engaging digital experiences. 
+                I enjoy blending creativity with logic to design websites that not only look great but also feel intuitive and alive.
               </span>
-              
+
               <span className="block">
-                Beyond web development, I have a strong interest in <span className="font-semibold text-primary">AI</span> and enjoy 
-                exploring its potential to create intelligent solutions. I'm always eager to learn new technologies, tackle challenges, 
-                and expand my expertise in both web and AI development.
+                Currently, I’m exploring <span className="font-semibold text-primary">AI/ML-based technologies</span> and 
+                <span className="font-semibold text-primary"> automation tools</span>, experimenting with how intelligence can 
+                elevate web experiences and streamline real-world workflows. My goal is to merge the power of 
+                automation with human creativity — building projects that think, learn, and evolve.
               </span>
-              
+
               <span className="block">
-                Outside of coding, I have a love for <span className="font-semibold text-primary">skating</span>, which keeps me active and inspired. 
-                My portfolio reflects my journey, growth, and dedication to the tech world, and I look forward to connecting with like-minded individuals.
+                I believe technology should feel personal, expressive, and inspiring. 
+                When I’m not coding, you’ll probably find me <span className="font-semibold text-primary">skating</span> 🛹 —
+                recharging my creativity and embracing new perspectives with every spin.
+              </span>
+
+              <span className="block">
+                Welcome to my digital space — where <span className="font-semibold text-primary">creativity meets intelligence</span> 
+                and every idea turns into code ✨.
               </span>
             </p>
           </div>

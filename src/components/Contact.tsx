@@ -11,28 +11,28 @@ const Contact = () => {
     {
       icon: <Mail className="w-6 h-6" />,
       label: "Email",
-      value: "umar@example.com",
-      href: "mailto:umar@example.com",
+      value: "shaikumaralthaf003@gmail.com",
+      href: "mailto:shaikumaralthaf003@gmail.com",
       gradient: "from-red-500 to-orange-500"
     },
     {
       icon: <Linkedin className="w-6 h-6" />,
       label: "LinkedIn",
-      value: "linkedin.com/in/shaikumaralthaf",
-      href: "https://linkedin.com/in/shaikumaranthaf",
+      value: "linkedin.com/in/deepviber03shaikumar",
+      href: "https://www.linkedin.com/in/deepviber03shaikumar/",
       gradient: "from-blue-600 to-blue-400"
     },
     {
       icon: <Github className="w-6 h-6" />,
       label: "GitHub",
-      value: "github.com/shaikumaranthaf",
-      href: "https://github.com/shaikumaranthaf",
+      value: "github.com/deepviber0",
+      href: "https://github.com/deepviber0",
       gradient: "from-gray-700 to-gray-500"
     }
   ];
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+    //e.preventDefault();
     // Add form submission logic here
     console.log("Form submitted:", formData);
   };
@@ -67,11 +67,18 @@ const Contact = () => {
           {/* Contact Form */}
           <div className="backdrop-blur-md bg-card/40 rounded-2xl p-8 border border-primary/20 shadow-[0_8px_32px_rgba(0,229,255,0.15)] animate-fade-in-up">
             <h3 className="text-2xl font-bold text-foreground mb-6">Send a Message</h3>
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} action="https://api.web3forms.com/submit" method="POST" className="space-y-6">
+              <input
+                type="hidden"
+                name="access_key"
+                value="7d76bcdd-8e05-4025-8bd3-39815ef2cc04"
+              />
               <div>
+
                 <label className="block text-sm font-medium text-foreground mb-2">Name</label>
                 <Input
                   type="text"
+                  name="name"
                   placeholder="Your name"
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
@@ -83,6 +90,7 @@ const Contact = () => {
                 <label className="block text-sm font-medium text-foreground mb-2">Email</label>
                 <Input
                   type="email"
+                  name="email"
                   placeholder="your.email@example.com"
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
@@ -93,6 +101,7 @@ const Contact = () => {
               <div>
                 <label className="block text-sm font-medium text-foreground mb-2">Message</label>
                 <Textarea
+                name="message"
                   placeholder="Tell me about your project or idea..."
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
@@ -100,8 +109,8 @@ const Contact = () => {
                   required
                 />
               </div>
-              <Button 
-                type="submit" 
+              <Button
+                type="submit"
                 className="w-full gap-2 shadow-[0_0_30px_rgba(0,229,255,0.5)] hover:shadow-[0_0_50px_rgba(0,229,255,0.7)]"
               >
                 <Send className="w-4 h-4" />
@@ -137,21 +146,7 @@ const Contact = () => {
               </a>
             ))}
 
-            {/* Animated Bot Illustration */}
-            <div className="backdrop-blur-md bg-card/40 rounded-2xl p-6 border border-secondary/20 shadow-[0_4px_24px_rgba(123,97,255,0.1)]">
-              <div className="flex items-center gap-4">
-                <div className="relative w-16 h-16">
-                  <div className="absolute inset-0 bg-gradient-to-br from-secondary to-primary rounded-full animate-pulse-glow" />
-                  <div className="relative w-full h-full bg-background rounded-full flex items-center justify-center">
-                    <Sparkles className="w-8 h-8 text-secondary animate-float" />
-                  </div>
-                </div>
-                <div>
-                  <h4 className="text-lg font-semibold text-foreground mb-1">AI Assistant Ready</h4>
-                  <p className="text-sm text-muted-foreground">Quick response guaranteed 🚀</p>
-                </div>
-              </div>
-            </div>
+            
           </div>
         </div>
       </div>
