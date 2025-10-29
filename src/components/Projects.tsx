@@ -1,4 +1,4 @@
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Code, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Projects = () => {
@@ -36,7 +36,7 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 px-6 bg-card">
+    <section id="projects" className="relative py-20 px-6 overflow-hidden">
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">

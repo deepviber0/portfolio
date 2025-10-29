@@ -8,97 +8,64 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 98%;
-    --foreground: 220 15% 20%;
+    /* Futuristic Dark Theme - AI Inspired */
+    --background: 222 47% 5%;
+    --foreground: 210 40% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 220 15% 20%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 220 15% 20%;
-
-    --primary: 193 100% 42%;
-    --primary-foreground: 0 0% 100%;
-    --primary-glow: 193 95% 55%;
-
-    --secondary: 220 14% 96%;
-    --secondary-foreground: 220 15% 20%;
-
-    --muted: 220 14% 96%;
-    --muted-foreground: 220 9% 46%;
-
-    --accent: 193 100% 42%;
-    --accent-foreground: 0 0% 100%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 100%;
-
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 193 100% 42%;
-
-    --radius: 0.75rem;
-    
-    /* Custom design tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(193, 100%, 42%), hsl(193, 95%, 55%));
-    --gradient-hero: linear-gradient(135deg, hsl(193, 100%, 42%) 0%, hsl(210, 100%, 60%) 100%);
-    --shadow-glow: 0 0 40px hsla(193, 100%, 42%, 0.3);
-    --shadow-card: 0 4px 20px hsla(220, 15%, 20%, 0.08);
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-
-  .dark {
-    --background: 220 15% 10%;
-    --foreground: 0 0% 98%;
-
-    --card: 222.2 84% 4.9%;
+    --card: 222 47% 8%;
     --card-foreground: 210 40% 98%;
 
-    --popover: 222.2 84% 4.9%;
+    --popover: 222 47% 8%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 186 100% 50%;
+    --primary-foreground: 222 47% 5%;
+    --primary-glow: 186 100% 65%;
 
-    --secondary: 217.2 32.6% 17.5%;
+    --secondary: 263 70% 65%;
     --secondary-foreground: 210 40% 98%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 186 100% 50%;
+    --accent-foreground: 222 47% 5%;
 
-    --destructive: 0 62.8% 30.6%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 217 33% 15%;
+    --input: 217 33% 15%;
+    --ring: 186 100% 50%;
+
+    --radius: 1rem;
+    
+    /* Futuristic AI Design Tokens */
+    --neon-teal: 186 100% 50%;
+    --neon-violet: 263 70% 65%;
+    --glass-bg: 222 47% 8% / 0.6;
+    
+    --gradient-primary: linear-gradient(135deg, hsl(186, 100%, 50%), hsl(263, 70%, 65%));
+    --gradient-hero: linear-gradient(135deg, hsl(186, 100%, 50%) 0%, hsl(263, 70%, 65%) 100%);
+    --gradient-neural: radial-gradient(circle at 50% 50%, hsla(186, 100%, 50%, 0.15), transparent 70%);
+    --gradient-glass: linear-gradient(135deg, hsla(186, 100%, 50%, 0.1), hsla(263, 70%, 65%, 0.1));
+    
+    --shadow-glow: 0 0 60px hsla(186, 100%, 50%, 0.4);
+    --shadow-glow-violet: 0 0 60px hsla(263, 70%, 65%, 0.4);
+    --shadow-card: 0 8px 32px hsla(186, 100%, 50%, 0.15);
+    --shadow-intense: 0 0 80px hsla(186, 100%, 50%, 0.6), 0 0 40px hsla(263, 70%, 65%, 0.4);
+    
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --sidebar-background: 222 47% 5%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 186 100% 50%;
+    --sidebar-primary-foreground: 222 47% 5%;
+    --sidebar-accent: 217 33% 17%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 217 33% 15%;
+    --sidebar-ring: 186 100% 50%;
   }
 }
 

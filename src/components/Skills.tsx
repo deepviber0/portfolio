@@ -1,47 +1,53 @@
-import { Code2, Brain, Palette, Lightbulb } from "lucide-react";
+import { Code2, Database, Cpu, Palette, Brain, Sparkles } from "lucide-react";
 
 const Skills = () => {
   const skillCategories = [
     {
       icon: <Code2 className="w-8 h-8" />,
-      title: "Web Development",
-      skills: ["HTML", "CSS", "JavaScript"],
-      color: "from-blue-500 to-cyan-500"
+      title: "Frontend",
+      skills: ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS"],
+      color: "from-primary to-primary-glow",
+      borderColor: "border-primary/30 hover:border-primary/60"
     },
     {
-      icon: <Brain className="w-8 h-8" />,
+      icon: <Database className="w-8 h-8" />,
+      title: "Backend & Database",
+      skills: ["Node.js", "Express.js", "MongoDB", "Firebase"],
+      color: "from-secondary to-purple-500",
+      borderColor: "border-secondary/30 hover:border-secondary/60"
+    },
+    {
+      icon: <Cpu className="w-8 h-8" />,
       title: "Programming",
-      skills: ["Java", "Python", "C"],
-      color: "from-primary to-primary-glow"
-    },
-    {
-      icon: <Code2 className="w-8 h-8" />,
-      title: "Currently Learning",
-      skills: ["MongoDB", "Express.js", "React", "Node.js"],
-      color: "from-green-500 to-emerald-500"
-    },
-    {
-      icon: <Palette className="w-8 h-8" />,
-      title: "Design & Tools",
-      skills: ["Tkinter", "Figma"],
-      color: "from-purple-500 to-pink-500"
+      skills: ["Python", "Java", "C", "Git"],
+      color: "from-primary to-secondary",
+      borderColor: "border-primary/30 hover:border-secondary/60"
     },
     {
       icon: <Brain className="w-8 h-8" />,
       title: "AI & Data",
-      skills: ["NumPy", "Pandas", "AI Agents"],
-      color: "from-orange-500 to-red-500"
+      skills: ["NumPy", "Pandas", "OpenAI API", "LangChain", "n8n"],
+      color: "from-secondary to-pink-500",
+      borderColor: "border-secondary/30 hover:border-pink-500/60"
     },
     {
-      icon: <Lightbulb className="w-8 h-8" />,
+      icon: <Palette className="w-8 h-8" />,
+      title: "Design & Tools",
+      skills: ["Figma", "Tkinter", "VS Code", "Lyzr Studio"],
+      color: "from-primary to-cyan-500",
+      borderColor: "border-primary/30 hover:border-cyan-500/60"
+    },
+    {
+      icon: <Sparkles className="w-8 h-8" />,
       title: "Soft Skills",
-      skills: ["Consistency", "Problem Solving", "Positive Thinking", "Continuous Learning"],
-      color: "from-yellow-500 to-orange-500"
+      skills: ["Problem Solving", "Consistent Learning", "Creative Thinking", "Adaptability"],
+      color: "from-purple-500 to-secondary",
+      borderColor: "border-purple-500/30 hover:border-secondary/60"
     }
   ];
 
   return (
-    <section id="skills" className="py-20 px-6 bg-background">
+    <section id="skills" className="relative py-20 px-6 overflow-hidden">
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">
